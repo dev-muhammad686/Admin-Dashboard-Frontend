@@ -16,8 +16,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 
 function App() {
-  const admin = JSON.parse(localStorage.getItem("admin"));
-  // const admin = true
+  // const admin = JSON.parse(localStorage.getItem("admin"));
+  const admin = true
   return (
     <>
       <Router>
