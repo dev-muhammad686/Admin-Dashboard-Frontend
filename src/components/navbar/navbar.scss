@@ -1,0 +1,103 @@
+.navbar{
+    height: 50px;
+    border: 3px solid rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    // color: #555;
+
+    .wrapper{
+        width: 100%;
+        padding: 20px;
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .search{
+            display: flex;
+            align-items: center;
+            border: 0.5px solid lightgray;
+            padding: 3px;
+            background-color: white;
+            // background-color: yellow;
+            width: 30%;
+
+            .icon{
+                cursor: pointer;
+            }
+        }
+
+        input{
+            border: none;
+            outline: none;
+            background-color: transparent;
+            width: 100%;
+            // background-color: black;
+
+            &::placeholder{
+                font-size: 12px;
+            }
+        }
+
+        .items{
+            display: flex;
+            align-items: center;
+
+            .item1{
+                margin-right: 10px;
+
+                // &:nth-of-type(2){
+                //     // margin: 0px;
+                //     color: tomato;
+                // }
+
+                button{
+                    background-color: #7451f8;
+                    border: none;
+                    padding: 10px;
+                    color: white;
+                    border-radius: 25px;
+                    cursor: pointer;
+                }
+
+            }
+
+            .item{
+                display: flex;
+                align-items: center;
+                margin-right: 20px;
+                position: relative;
+
+                .icon{
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+
+                .avatar{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                 }
+
+                .counter{
+                    height: 15px;
+                    width: 15px;
+                    background-color: red;
+                    border-radius: 50%;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 10px;
+                    font-weight: bold;
+                    position: absolute;
+                    top: -5px;
+                    right: -5px;
+                }
+            }
+        }
+    }
+}

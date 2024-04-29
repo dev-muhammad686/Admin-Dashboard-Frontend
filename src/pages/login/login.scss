@@ -1,0 +1,91 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(55, 61, 32, 0.6), rgba(55, 61, 32, 0.6)),
+    url("../../../public/images/college-logo.png") no-repeat center center/cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .wrapper {
+    width: 25%;
+    // height: 50vh;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 2.5rem;
+
+    .title {
+      font-size: 1.5rem;
+      font-weight: 300;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+    //   height: 50vh;
+
+      .label {
+        display: flex;
+        font-size: .9rem;
+        margin: 1rem 1rem 0.5rem 0rem;
+
+        .special {
+          color: red;
+          margin-left: 0.2rem;
+        }
+      }
+
+      .input {
+        flex: 1;
+        min-width: 40%;
+        padding: .5rem;
+      }
+
+      .button {
+        width: 30%;
+        border: none;
+        padding: .5rem;
+        background-color: #373d20;
+        font-weight: 600;
+        font-size: .9rem;
+        color: white;
+        cursor: pointer;
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        &:hover {
+          background-color: #717744;
+          transition: all 0.3s linear;
+        }
+      }
+
+      .link {
+        text-decoration: underline;
+        cursor: pointer;
+        color: #717744;
+        font-weight: 600;
+        // margin: 0.5rem 0rem;
+        font-size: .9rem;
+      }
+
+    }
+    
+    .home {
+        font-weight: 600;
+        font-size: .9rem;
+        cursor: pointer;
+        background-color: #717744;
+        color: white;
+        border: none;
+        padding: .5rem;
+        // &:hover {
+        //   background-color: #717744;
+        //   transition: all 0.3s linear;
+        // }
+      }
+  }
+}

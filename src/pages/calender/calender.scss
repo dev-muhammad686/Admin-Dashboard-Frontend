@@ -1,0 +1,132 @@
+.calender {
+    display: flex;
+
+    .calenderContainer {
+        flex: 6;
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f2f2f2;
+            height: 16vh;
+            padding: 10px;
+            padding-bottom: 0px;
+
+            .left {
+                flex: 2;
+                display: flex;
+                align-items: center;
+
+                .appointeesProfiles {
+                    background-color: white;
+                    border-radius: 12px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .profile {
+                        margin-right: 14px;
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+
+                    .image1 {
+                        border: 5px solid #e91e63;
+                    }
+
+                    .image2 {
+                        border: 5px solid #2196f3;
+                    }
+
+                    .image3 {
+                        border: 5px solid #030170;
+                    }
+
+                    span {
+                        color: #252525;
+                        text-align: center;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .right{
+                flex: 6;
+                // background-color: yellow;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                // padding-bottom: 4px;
+                // border-radius: 12px;
+
+
+                .filterContainer{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: white;
+                    // border-radius: 12px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+
+                    .filters{
+                        outline: none;
+                        padding: 6px;
+                        background-color: #f2f2f2;
+                        border-radius: 12px;
+
+                        .options{
+
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            background-color: #f2f2f2;
+            height: 72vh;
+            width: 100%;
+
+            .calenderContents {
+                padding: 10px;
+                padding-top: 0px;
+
+                .rbc-calendar {
+                    padding: 10px;
+                    border-radius: 15px;
+
+                    .rbc-event {
+                        /* Styles for events */
+                    }
+
+                    .rbc-btn-group {
+                        
+                        button{
+                            cursor: pointer;
+                        }
+
+                        .rbc-active{
+                            background-color: #2f6dfc;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
